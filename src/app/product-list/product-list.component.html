@@ -12,5 +12,5 @@
 
   <button (click)="share()">Share</button>
 
-  <app-product-alerts></app-product-alerts>
+  <app-product-alerts [product]='product' (notify)="notifyClicked()"></app-product-alerts>
 </div>
