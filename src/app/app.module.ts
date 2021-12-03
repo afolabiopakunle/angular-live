@@ -15,7 +15,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     {path: '', component: ProductListComponent},
     {path: 'products/:productId', component: ProductDetailsComponent, pathMatch: 'full'}
   ]) ],
-  declarations: [ AppComponent, ProductListComponent, TopBarComponent, ProductAlertsComponent ],
+  declarations: [ AppComponent, ProductListComponent, TopBarComponent, ProductAlertsComponent, ProductDetailsComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
