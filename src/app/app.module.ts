@@ -4,14 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ProductsComponent } from './products/products.component';
+import { ProductListComponent } from './product-list/product-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
-    {path: '', component: ProductsComponent}
+    {path: '', component: ProductListComponent}
   ]) ],
-  declarations: [ AppComponent, ProductsComponent, TopBarComponent ],
+  declarations: [ AppComponent, ProductListComponent, TopBarComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
