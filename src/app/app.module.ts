@@ -19,6 +19,7 @@ import { ShippingComponent } from './shipping/shipping.component';
   imports:      [ CommonModule, BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot([
     {path: '', component: ProductListComponent},
     {path: 'products/:productId', component: ProductDetailsComponent, pathMatch: 'full'},
+    {path: 'cart', component: CartComponent},
     {path: 'shipping', component: ShippingComponent}
   ]) ],
   declarations: [ AppComponent, ProductListComponent, TopBarComponent, ProductAlertsComponent, ProductDetailsComponent, CartComponent, ShippingComponent, ],
