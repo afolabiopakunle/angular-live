@@ -1,1 +1,5 @@
-<p>cart component works!</p>
+<div *ngIf="items.length">
+  <p *ngFor="let item of items"> 
+    {{ item.name }}
+  </p>
+</div>
