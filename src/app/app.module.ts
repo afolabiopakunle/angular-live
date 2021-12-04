@@ -13,13 +13,15 @@ import { CartComponent } from './cart/cart.component';
 
 import { CartService } from './cart.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   imports:      [ CommonModule, BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot([
     {path: '', component: ProductListComponent},
-    {path: 'products/:productId', component: ProductDetailsComponent, pathMatch: 'full'}
+    {path: 'products/:productId', component: ProductDetailsComponent, pathMatch: 'full'},
+    {path: 'shipping', component: ShippingComponent}
   ]) ],
-  declarations: [ AppComponent, ProductListComponent, TopBarComponent, ProductAlertsComponent, ProductDetailsComponent, CartComponent ],
+  declarations: [ AppComponent, ProductListComponent, TopBarComponent, ProductAlertsComponent, ProductDetailsComponent, CartComponent, ShippingComponent, ],
   bootstrap:    [ AppComponent ],
   providers: [CartService]
 })
