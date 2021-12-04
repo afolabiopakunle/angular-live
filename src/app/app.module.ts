@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';  
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
-  imports:      [ CommonModule, BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot([
+  imports:      [ CommonModule, BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, RouterModule.forRoot([
     {path: '', component: ProductListComponent},
     {path: 'products/:productId', component: ProductDetailsComponent, pathMatch: 'full'},
     {path: 'cart', component: CartComponent},
