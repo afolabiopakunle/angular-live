@@ -1,5 +1,9 @@
-<div *ngIf="items.length">
-  <p *ngFor="let item of items"> 
-    {{ item.name }}
-  </p>
+<h3>Cart</h3>
+<div class="cart-item" *ngFor="let item of items">
+  <span> {{ item.name }} </span>
+  <span> {{ item.price }} </span>
+</div>
+
+<div *ngIf="!items.length">
+  <p>No items selected</p>
 </div>

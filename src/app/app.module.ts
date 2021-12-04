@@ -12,9 +12,10 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 
 import { CartService } from './cart.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports:      [ CommonModule, BrowserModule, FormsModule, RouterModule.forRoot([
+  imports:      [ CommonModule, BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot([
     {path: '', component: ProductListComponent},
     {path: 'products/:productId', component: ProductDetailsComponent, pathMatch: 'full'}
   ]) ],
