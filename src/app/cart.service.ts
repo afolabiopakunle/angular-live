@@ -1,16 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Product } from './products';
+import { IProduct } from './products';
 
 @Injectable()
 export class CartService {
 
-  items: Product[] = [];
+  items: IProduct[] = [];
 
   constructor(private http: HttpClient) { }
 
-  addToCart(product: Product) {
+  addToCart(product: IProduct) {
     this.items.push(product);
   }
 

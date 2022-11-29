@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Product } from '../products';
+import { IProduct } from '../products';
 
 @Component({
   selector: 'app-product-alerts',
@@ -8,7 +8,7 @@ import { Product } from '../products';
 })
 export class ProductAlertsComponent implements OnInit {
 
-  @Input() product: Product;
+  @Input() product: IProduct;
   @Output() notify = new EventEmitter();
 
   onClickNotify() {
